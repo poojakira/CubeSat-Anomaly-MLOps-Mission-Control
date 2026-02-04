@@ -3,6 +3,7 @@
 A real-time monitoring and anomaly detection system for satellite telemetry. This project integrates a Python-based Data Producer, a Scikit-Learn Machine Learning Pipeline, Firebase Real-Time Database, and an MLflow Audit Layer, all visualized through a multi-page Streamlit Dashboard.
 
 **Critical: Security & Firebase Setup**
+
 The repository lacks a service_account.json file because users need to create the file themselves. The file contains private keys which need to be protected because they provide unauthorized access to your database.
 
 **How to get your key:**
@@ -19,9 +20,9 @@ v. You must add service_account.json to your .gitignore file to protect your pri
 
 **Project Directory**
 
-i. Root Directory: sensor-anomaly-mlops The top-level folder contains your core execution scripts, configuration files, and environment settings.
+i. **Root Directory:** sensor-anomaly-mlops The top-level folder contains your core execution scripts, configuration files, and environment settings.
 
-ii. Configuration & Security
+ii. **Configuration & Security**
 
 a. config.py: Central configuration for Firebase URLs and global settings.
 
@@ -29,7 +30,7 @@ b. service_account.json: (Critical) Your private Firebase credentials file.
 
 c. .venv/: Your Python virtual environment folder.
 
-iii. Core Logic & AI Brain
+iii. **Core Logic & AI Brain**
 
 a. ml_engine.py: Defines the Isolation Forest model logic.
 
@@ -37,7 +38,7 @@ b. feature_processor.py: Handles rolling math and telemetry data cleaning.
 
 c.ml_orchestrator.py: The automation script that retrains the AI every 30 seconds.
 
-iv. Data & Orchestration
+iv. **Data & Orchestration**
 
 a. mock_telemetry.py: The satellite simulator pushing data to Firebase.
 
