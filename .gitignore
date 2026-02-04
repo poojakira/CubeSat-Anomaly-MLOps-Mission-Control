@@ -1,0 +1,14 @@
+# Secrets
+service_account.json
+.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pkl
+mlruns/
+mlflow.db
+
+# OS
+.DS_Store

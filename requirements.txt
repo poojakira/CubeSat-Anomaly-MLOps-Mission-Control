@@ -1,0 +1,9 @@
+pandas
+numpy
+scikit-learn
+firebase-admin
+streamlit
+plotly
+mlflow
+python-dotenv
+pyarrow
